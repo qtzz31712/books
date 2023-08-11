@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스트도서목록</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>최신도서목록</h1>
+
+<div id="wrap">
+        <div id="content"></div>
+    <div id="addlist">
+            <div class="formbox">
+                <span>도서 추가</span>
+                <form action="#" id="addon">
+                <div>
+                        <p><label>제  목: </label><input type="text" id="subjectId"></p>
+                        <p><label>저  자: </label><input type="text" id="authorId"></p>
+                        <p><label>출판사: </label><input type="text" id="publisherId"></p>
+                        <p><label>발행일: </label><input type="text" id="dateId"></p>
+                        <p><label>판매가: </label><input type="text" id="priceId"></p>
+                        <p><label>요  약: </label><input type="text" id="summaryId"></p>
+                        <p><label>이미지: </label><input type="text" id="photoId"></p>
+        
+                </div>
+                <div>
+                    <button type="button" id="addbtn">등 록</button>
+                    <button type="reset">취 소</button>
+                </div>
+                </form>
+            </div>
+    </div>
+</div>   
+    <script type="module" src="./js/script.js"></script>
+    
+
+</body>
+</html>

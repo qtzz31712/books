@@ -1,0 +1,44 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{ color: inherit; text-decoration: none;}
+ul {list-style: none;}
+
+#content, #addlidt {max-width: 1200px;margin: 0 auto;}
+
+h1 { font-size: 46px; font-weight: 700; text-align: center;
+    border-bottom: 1px solid yellowgreen;padding: 30px 0;
+    margin-bottom: 30px;}
+
+/* content */
+    #content ul {display: flex; flex-wrap: wrap; overflow: hidden;}
+#content ul li {width: 31%; margin: 30px 1%; position: relative; height: 550px;
+    border-bottom: 1px solid yellowgreen; transition: 0.5s;}
+    #content ul li:hover {transform: scale(1.1);
+        background: rgba(0,0,0,0.5); color: aliceblue;} 
+    #content ul li div  {text-align: center; padding: 20px 0;}
+    
+    #content ul li div img {height: 300px;}
+    #content ul li div p {font-size: 16px; line-height: 1.5em;}
+    #content ul li div p span {font-weight: 700;}
+    #content ul li button {background: orangered; color: #fff;
+        border-radius: 5px; padding: 5px 20px; font-size: 16px;
+        position: absolute; left: 40%; bottom: 20px; cursor: pointer; display: none;}
+        #content ul li:hover button {display: block;}
+#wrap {position: relative;}        
+
+/* 추가상자 */
+#addlist {position: absolute; top: -72px; left: 20px;}
+#addlist .formbox {padding: 10px 0;}
+#addlist .formbox span {background: pink; border-radius: 5px; margin-bottom: 30px;
+    padding: 10px 30px;}
+#addlist .formbox form  {background:  #888; border-radius: 5px; width: 800px;
+    color: #fff; display: none; text-align: right;padding-right: 20px; padding-top: 10px;}
+#addlist .formbox:hover form {display:block}
+#addlist .formbox form div {margin-top: 10px;} 
+#addlist .formbox form div p {line-height: 1.5em; font-size: 18px; height:40px;}
+#addlist .formbox form div p input {width: 80%; height: 30px;}
+.formbox div:nth-child(2) {text-align: center;}
+.formbox button {text-align: center; padding: 10px 20px; background: coral;
+ border-radius: 5px; font-size: 16px; color: #333; margin: 10px 20px;
+cursor: pointer;}
+
